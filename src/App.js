@@ -41,7 +41,7 @@ function App() {
 	// Get historical data
 	const getHistoricalData = async (currency) => {
 		const now = new Date();
-		const to = new Date(now.valueOf() - 60 * 60 * 24 * 1000 * 2);
+		const to = new Date(now.valueOf() - 60 * 60 * 24 * 1000);
 		const date_to = formatDate(to.getFullYear(), to.getMonth(), to.getDate());
 		const from = new Date(now.valueOf() - 60 * 60 * 24 * 1000 * (6 + now.getDay()));
 		const date_from = formatDate(from.getFullYear(), from.getMonth(), from.getDate());
